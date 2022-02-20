@@ -1,0 +1,19 @@
+== Will create the s3 bucket and DynamoDB table for terraform state backend
+
+$ terraform init
+The most important output from this command is the following:
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider selections
+Now we’re ready to run terraform apply.
+
+$ terraform apply
+This will output a list of the AWS resources that are going to be created. You are always strongly encouraged to review the output of the plan to ensure that you are fully aware of any changes such as creation, modifications, and deletions.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value:
+As indicated above, yes is the only acceptable answer in order for the process to continue. The final output you receive after typing yes should look like this.
+
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
