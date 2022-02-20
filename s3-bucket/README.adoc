@@ -9,7 +9,6 @@ $ terraform init
 
 The most important output from this command is the following:
 
-.
 ----
 Terraform has created a lock file .terraform.lock.hcl to record the provider selections
 ----
