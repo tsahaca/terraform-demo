@@ -1,9 +1,19 @@
-== Will create the s3 bucket and DynamoDB table for terraform state backend
+== S3 Bucket and DynamoDB table
 
+This will create a set of resources in AWS to manage your state file in a secure S3 bucket with DynamoDB lock protection.
+
+[source,bash]
+----
 $ terraform init
+----
+
 The most important output from this command is the following:
 
+[source,bash]
+----
 Terraform has created a lock file .terraform.lock.hcl to record the provider selections
+----
+
 Now we’re ready to run terraform apply.
 
 $ terraform apply
