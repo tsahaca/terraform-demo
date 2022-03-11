@@ -13,9 +13,16 @@ The most important output from this command is the following:
 Terraform has created a lock file .terraform.lock.hcl to record the provider selections
 ----
 
-Now we’re ready to run terraform apply.
+Run "terraform plan" to see
+any changes that are required for your infrastructure. 
 
+Now we're ready to run terraform apply.
+
+[source,bash]
+----
 $ terraform apply
+----
+
 This will output a list of the AWS resources that are going to be created. You are always strongly encouraged to review the output of the plan to ensure that you are fully aware of any changes such as creation, modifications, and deletions.
 
 Do you want to perform these actions?

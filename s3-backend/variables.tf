@@ -6,5 +6,5 @@ variable "vpc_cidr" {
 
 variable "vpc_name" {
     type = string
-    default = "terraform-demo-vpc"
+    default = "demo-vpc"
 }

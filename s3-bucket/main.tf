@@ -51,3 +51,14 @@ resource "aws_dynamodb_table" "terraform-state" {
    type = "S"
  }
 }
+
+terraform {
+ backend "s3" {
+   bucket         = "tsaha-terraform-backend"
+   key            = "state/terraform.tfstate"
+   region         = "us-east-1"
+   encrypt        = true
+ //  kms_key_id     = "alias/terraform-bucket-key"
+   dynamodb_table = "terraform-state"
+ }
+}
