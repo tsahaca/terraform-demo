@@ -1,5 +1,7 @@
 == S3 Bucket and DynamoDB table
 
+https://technology.doximity.com/articles/terraform-s3-backend-best-practices
+
 This will create a set of resources in AWS to manage your state file in a secure S3 bucket with DynamoDB lock protection.
 
 [source,bash]
